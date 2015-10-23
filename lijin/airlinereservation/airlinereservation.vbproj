@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24F9DE7B-1BD0-4C57-9DB8-7F9707DD8960}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>airlinereservation</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>airlinereservation.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>airlinereservation.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="airlineDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="airlineDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlineDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="airlineDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlineDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empdetails.Designer.vb">
+      <DependentUpon>empdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="empdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\add_emp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\add_emp.Designer.vb">
+      <DependentUpon>add_emp.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="airlineDataSet.vb">
+      <DependentUpon>airlineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="airlineDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlineDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="airlineDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlineDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="airlineDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>airlineDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="allflights.Designer.vb">
+      <DependentUpon>allflights.vb</DependentUpon>
+    </Compile>
+    <Compile Include="allflights.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allservices.Designer.vb">
+      <DependentUpon>allservices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="allservices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="addflight.Designer.vb">
+      <DependentUpon>addflight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addflight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addservice.Designer.vb">
+      <DependentUpon>addservice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addservice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepwd.Designer.vb">
+      <DependentUpon>changepwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changepwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteemp.Designer.vb">
+      <DependentUpon>deleteemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flight.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>flight.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="flightDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>flightDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="servi.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>servi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="serviceDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>serviceDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="valid.vb" />
+    <Compile Include="validate.vb" />
+    <Compile Include="emp_main.Designer.vb">
+      <DependentUpon>emp_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emp_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flight_inf.Designer.vb">
+      <DependentUpon>flight_inf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="flight_inf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tick_rev.Designer.vb">
+      <DependentUpon>tick_rev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tick_rev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tick_canc.Designer.vb">
+      <DependentUpon>Tick_canc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tick_canc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_main.Designer.vb">
+      <DependentUpon>admin_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serv.Designer.vb">
+      <DependentUpon>serv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="serv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\start.Designer.vb">
+      <DependentUpon>start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="empdetails.resx">
+      <DependentUpon>empdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\add_emp.resx">
+      <DependentUpon>add_emp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addflight.resx">
+      <DependentUpon>addflight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addservice.resx">
+      <DependentUpon>addservice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allflights.resx">
+      <DependentUpon>allflights.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allservices.resx">
+      <DependentUpon>allservices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepwd.resx">
+      <DependentUpon>changepwd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteemp.resx">
+      <DependentUpon>deleteemp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_main.resx">
+      <DependentUpon>emp_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flight_inf.resx">
+      <DependentUpon>flight_inf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tick_rev.resx">
+      <DependentUpon>tick_rev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tick_canc.resx">
+      <DependentUpon>Tick_canc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_main.resx">
+      <DependentUpon>admin_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serv.resx">
+      <DependentUpon>serv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\start.resx">
+      <DependentUpon>start.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="airlineDataSet.xsc">
+      <DependentUpon>airlineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlineDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlineDataSet.xss">
+      <DependentUpon>airlineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet1.xsc">
+      <DependentUpon>airlineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlineDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlineDataSet1.xss">
+      <DependentUpon>airlineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet2.xsc">
+      <DependentUpon>airlineDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlineDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlineDataSet2.xss">
+      <DependentUpon>airlineDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet3.xsc">
+      <DependentUpon>airlineDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlineDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlineDataSet3.xss">
+      <DependentUpon>airlineDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet4.xsc">
+      <DependentUpon>airlineDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlineDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlineDataSet4.xss">
+      <DependentUpon>airlineDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet5.xsc">
+      <DependentUpon>airlineDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="airlineDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>airlineDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="airlineDataSet5.xss">
+      <DependentUpon>airlineDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="flight.xsc">
+      <DependentUpon>flight.xsd</DependentUpon>
+    </None>
+    <None Include="flight.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>flight.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="flight.xss">
+      <DependentUpon>flight.xsd</DependentUpon>
+    </None>
+    <None Include="flightDataSet2.xsc">
+      <DependentUpon>flightDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="flightDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>flightDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="flightDataSet2.xss">
+      <DependentUpon>flightDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="servi.xsc">
+      <DependentUpon>servi.xsd</DependentUpon>
+    </None>
+    <None Include="servi.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>servi.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="servi.xss">
+      <DependentUpon>servi.xsd</DependentUpon>
+    </None>
+    <None Include="serviceDataSet2.xsc">
+      <DependentUpon>serviceDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="serviceDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>serviceDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="serviceDataSet2.xss">
+      <DependentUpon>serviceDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Airline-Reservation-System.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Air-Cargo-From-Szx-Hkg-To-Worldwide-Airport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane_ticket_290x2001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane_ticket_290x20011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
